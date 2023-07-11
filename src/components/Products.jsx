@@ -7,7 +7,7 @@ const Products = () => {
     const [data, setData] = useState([])
     const [error, setError] = useState(false)
     useEffect(() => {
-        axios.get('https://tss-backend-aqx2.onrender.com/api/product').then((res) => {
+        axios.get('https://tss-backend-e-commerce.onrender.com/api/product').then((res) => {
             console.log(res.data)
             setData(res.data.products)
         }).catch((err) => {
